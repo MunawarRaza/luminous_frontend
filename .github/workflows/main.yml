@@ -56,8 +56,8 @@ jobs:
         cd code
         npm install
     - name: Build and capture output
-      env:
-        VITE_API_URL: ${{vars.VITE_API_URL}}
+      # env:
+      #   VITE_API_URL: ${{vars.VITE_API_URL}}
       run: |
         cd code
         export VITE_API_URL
