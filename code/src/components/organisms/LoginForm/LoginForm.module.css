@@ -1,0 +1,92 @@
+.Wrapper {
+  width: 100%;
+  max-width: var(--mantine-breakpoint-xs);
+  height: 90%;
+}
+
+.FormCard {
+  background: linear-gradient(
+    161deg,
+    rgba(255, 255, 255, 1) 13.55%,
+    rgba(249, 253, 255, 1) 49.01%,
+    rgba(247, 253, 255, 1) 55.86%,
+    rgba(235, 249, 255, 1) 72.87%,
+    rgba(181, 233, 255, 1) 100.83%
+  ) !important;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding: var(--mantine-spacing-2xl);
+  width: 100%;
+  border-radius: var(--mantine-radius-xl);
+  position: relative;
+}
+
+.HeaderWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--mantine-spacing-xs);
+}
+
+.LoginForm {
+  width: 100%;
+}
+
+.ToggleButton {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SubTitle {
+  margin-top: var(--mantine-spacing-sm);
+  margin-bottom: var(--mantine-spacing-lg);
+  font-size: var(--mantine-spacing-sm);
+  line-height: var(--mantine-line-height-xl);
+}
+
+.ThirdPartyWrapper {
+  text-align: center;
+  margin: var(--mantine-spacing-2xl) 0;
+}
+
+.ThirdPartyWrapper div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+  margin-top: 1rem;
+}
+
+.Link {
+  font-size: var(--mantine-font-size-sm);
+  font-weight: 400;
+  text-align: right;
+  line-height: var(--mantine-line-height-xs);
+}
+
+.ErrorMessage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.SignUpText {
+  text-align: center;
+
+  a {
+    color: var(--mantine-color-primary-6);
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: var(--mantine-spacing-xs);
+  }
+}

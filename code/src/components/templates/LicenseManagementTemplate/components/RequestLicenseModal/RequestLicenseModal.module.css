@@ -1,0 +1,16 @@
+.RequestForm {
+  width: 100%;
+  max-width: rem(700px);
+}
+
+.FormsWrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: var(--mantine-spacing-sm);
+  gap: 20px;
+
+  > div {
+    width: 100%;
+  }
+}

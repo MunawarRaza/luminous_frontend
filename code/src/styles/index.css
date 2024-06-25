@@ -1,0 +1,21 @@
+@import './fonts.css';
+
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-family: 'Titillium Web', sans-serif;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+:root[data-mantine-color-scheme='dark'] {
+  --mantine-color-body: #012f42;
+  --mantine-color-text: #fafafa;
+}

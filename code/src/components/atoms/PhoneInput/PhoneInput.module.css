@@ -1,0 +1,51 @@
+.phoneInput {
+  border: var(--mantine-border-hairline) solid var(--mantine-color-gray-3);
+  border-radius: var(--mantine-radius-md);
+  line-height: var(--mantine-line-height-sm);
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.phoneInput:hover:not(.errorInput) {
+  border-color: var(--mantine-color-gray-8);
+}
+
+.phoneInput:focus {
+  outline: var(--mantine-border-thin) solid var(--mantine-color-gray-8);
+}
+
+.errorInput {
+  border-color: var(--mantine-color-red-5);
+}
+
+.errorInput:focus {
+  outline: var(--mantine-border-thick) solid var(--mantine-color-red-1);
+}
+
+.label {
+  margin-bottom: var(--mantine-spacing-sm);
+  font-size: var(--mantine-font-size-sm);
+  font-weight: 600;
+  line-height: var(--mantine-line-height-sm);
+}
+
+.error {
+  margin-top: var(--mantine-spacing-xs);
+  color: var(--mantine-color-red-5);
+}
+
+:root[data-mantine-color-scheme='dark'] {
+  .phoneInput {
+    border-color: var(--mantine-color-gray-0);
+    background-color: var(--mantine-color-secondary-7);
+    color: var(--mantine-color-gray-0);
+
+    ::placeholder {
+      color: var(--mantine-color-gray-3);
+    }
+  }
+
+  .label {
+    color: var(--mantine-color-primary-1);
+  }
+}

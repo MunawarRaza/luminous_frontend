@@ -1,0 +1,41 @@
+.InputsWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--mantine-spacing-md);
+  gap: 20px;
+}
+
+.InlineWrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.DigitsInput {
+  max-width: rem(50px);
+
+  input {
+    text-align: center;
+  }
+}
+
+.CVVInput {
+  max-width: rem(50px);
+
+  input {
+    text-align: center;
+  }
+}
+
+.SubLegend {
+  margin-bottom: var(--mantine-spacing-md);
+
+  legend {
+    font-size: var(--mantine-font-size-sm);
+  }
+}
+
+.FluidInput {
+  width: 70%;
+}

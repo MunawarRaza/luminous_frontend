@@ -1,0 +1,11 @@
+.ToggleButton {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.ToggleIcon {
+  width: 24px;
+  height: 24px;
+}

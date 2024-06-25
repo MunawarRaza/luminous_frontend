@@ -1,0 +1,9 @@
+.Tooltip {
+  background-color: hsl(198, 100%, 33%);
+  color: #fff;
+  padding-left: var(--mantine-spacing-sm);
+  padding-right: var(--mantine-spacing-sm);
+  border-radius: var(--mantine-radius-md);
+  font-weight: 600;
+  font-size: var(--mantine-font-size-sm);
+}

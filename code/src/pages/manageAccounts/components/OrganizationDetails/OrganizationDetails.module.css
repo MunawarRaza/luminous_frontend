@@ -1,0 +1,19 @@
+.ActionGroup {
+  display: flex;
+  gap: 14px;
+  flex: 0.5;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.ActionButton {
+  max-width: rem(90px);
+}
+
+.DetailsForm {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  min-width: rem(600px);
+}

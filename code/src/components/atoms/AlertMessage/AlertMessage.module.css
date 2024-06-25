@@ -1,0 +1,92 @@
+.sharped {
+  border-radius: var(--mantine-radius-none);
+}
+
+.root {
+  border-top: 4px solid var(--mantine-color-primary-3);
+  border-radius: var(--mantine-radius-xl) var(--mantine-radius-xl) 0 0;
+  background-color: var(--mantine-color-primary-6);
+}
+
+.root-success {
+  background-color: var(--mantine-color-green-5);
+  border-color: var(--mantine-color-green-2);
+}
+
+.root-warning {
+  background-color: var(--mantine-color-yellow-4);
+  border-color: var(--mantine-color-yellow-2);
+}
+
+.root-error {
+  background: var(--mantine-color-red-9);
+  border-color: var(--mantine-color-red-4);
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: var(--mantine-spacing-md);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.icon {
+  width: rem(22px);
+  height: rem(22px);
+  stroke-width: 2;
+}
+
+.icon-error {
+  color: var(--mantine-color-red-1);
+}
+
+.icon-success {
+  color: var(--mantine-color-green-1);
+}
+
+.icon-warning {
+  color: var(--mantine-color-yellow-1);
+}
+
+.title {
+  font-size: var(--mantine-font-size-md);
+  font-weight: 700;
+  color: #fff;
+}
+
+.title-error {
+  color: var(--mantine-color-red-1);
+}
+
+.title-success {
+  color: var(--mantine-color-green-1);
+}
+
+.title-warning {
+  color: var(--mantine-color-warning-1);
+}
+
+.closeButton {
+  color: #fff;
+  stroke-width: 2;
+
+  svg {
+    width: rem(20px) !important;
+    height: rem(20px) !important;
+  }
+}
+
+.linkButton {
+  color: #fff;
+  stroke-width: 2;
+  width: rem(16px) !important;
+  height: rem(16px) !important;
+}
+
+.titleWrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}

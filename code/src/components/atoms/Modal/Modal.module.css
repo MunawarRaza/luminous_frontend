@@ -1,0 +1,50 @@
+.Overlay {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.Modal {
+  border-radius: var(--mantine-radius-lg);
+  border: 1px solid var(--mantine-color-primary-5);
+  flex: none;
+  width: 95%;
+  max-width: fit-content;
+}
+
+.Title {
+  color: var(--mantine-color-secondary-7);
+  font-weight: var(--mantine-heading-font-weight);
+  font-size: var(--mantine-font-size-3xl);
+}
+
+.Header {
+  padding: var(--mantine-spacing-lg);
+  padding-bottom: var(--mantine-spacing-md);
+}
+
+.Body {
+  padding: var(--mantine-spacing-lg);
+  padding-top: 0;
+}
+
+.Close {
+  outline: none;
+
+  svg {
+    width: rem(32px) !important;
+    height: rem(32px) !important;
+  }
+}
+
+:root[data-mantine-color-scheme='dark'] {
+  .Title {
+    color: var(--mantine-color-secondary-1);
+  }
+
+  .Close svg {
+    color: var(--mantine-color-secondary-1);
+  }
+
+  .Close:hover {
+    background-color: var(--mantine-color-primary-7);
+  }
+}

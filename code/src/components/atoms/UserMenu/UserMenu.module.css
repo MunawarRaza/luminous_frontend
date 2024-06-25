@@ -1,0 +1,51 @@
+.Dropdown {
+  border-radius: var(--mantine-radius-md);
+  box-shadow: var(--mantine-shadow-sm);
+  border: 1px solid var(--mantine-color-gray-3);
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.Icon {
+  width: rem(18px);
+  height: rem(18px);
+}
+
+.MenuButton {
+  padding: var(--mantine-spacing-xs) var(--mantine-spacing-md);
+  background: transparent;
+  border: 1px solid var(--mantine-color-secondary-5);
+  color: var(--mantine-color-dark);
+  cursor: pointer;
+  border-radius: var(--mantine-radius-md);
+  min-width: rem(193px);
+
+  img {
+    width: rem(20px);
+    height: rem(20px);
+    border-radius: var(--mantine-radius-sm);
+  }
+}
+
+:root[data-mantine-color-scheme='dark'] {
+  .Dropdown {
+    background: var(--mantine-color-primary-5);
+    border: 1px solid var(--mantine-color-gray-1);
+
+    a {
+      color: var(--mantine-color-text);
+    }
+  }
+
+  .MenuButton {
+    border-color: var(--mantine-color-secondary-1);
+    color: #fff;
+  }
+
+  .DropdownItem:hover {
+    background: var(--mantine-color-secondary-6);
+  }
+}

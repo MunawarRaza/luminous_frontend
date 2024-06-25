@@ -1,0 +1,5 @@
+.Form {
+  width: 100%;
+  min-width: rem(450px);
+  margin-top: var(--mantine-spacing-md);
+}

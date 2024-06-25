@@ -1,0 +1,234 @@
+{
+  "uuid": "0cd28ff1-3a56-465a-b117-0c0ae917b85d",
+  "lastMigration": 32,
+  "name": "Codexa Mock API - GAS",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 9005,
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "66c0f5b2-f126-46a4-91df-08a0ade6762c",
+      "type": "http",
+      "documentation": "Base route",
+      "method": "get",
+      "endpoint": "",
+      "responses": [
+        {
+          "uuid": "52ff9921-a0db-4040-841f-67455d962017",
+          "body": "{\n  \"message\": \"Welcome to GAS api\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "999fb362-6a50-4f9a-869e-af5f11ffd431",
+      "type": "http",
+      "documentation": "Login to Codexa",
+      "method": "post",
+      "endpoint": "login",
+      "responses": [
+        {
+          "uuid": "fc249a5d-f81b-4620-9492-1f3f04f48127",
+          "body": "{\n    \"message\": \"user is logged in\",\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaWQiOjEsIm5hbWUiOiJKb2huIERvZSIsImlhdCI6MTUxNjIzOTAyMiwiZW1haWwiOiJ0ZXN0QG1haWwuY29tIn0.3sXjD9khYXr11_1nyb_cC1thd76RFFij1RNzskaP82c\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "a0335236-43e5-4cf0-a9f3-65a19ef3113f",
+          "body": "{\n  \"message\": \"user not found\"\n}",
+          "latency": 0,
+          "statusCode": 401,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "body",
+              "modifier": "password",
+              "value": "123456",
+              "invert": true,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "56c89687-1e26-48dc-8f37-6d093c369071",
+      "type": "http",
+      "documentation": "Register user to Codexa",
+      "method": "post",
+      "endpoint": "register",
+      "responses": [
+        {
+          "uuid": "cb5d4a81-80c6-451c-b4cc-29b1a5c5acf6",
+          "body": "{\n    \"message\": \"user registered\",\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaWQiOjEsIm5hbWUiOiJKb2huIERvZSIsImlhdCI6MTUxNjIzOTAyMiwiZW1haWwiOiJ0ZXN0QG1haWwuY29tIn0.3sXjD9khYXr11_1nyb_cC1thd76RFFij1RNzskaP82c\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "body",
+              "modifier": "",
+              "value": "",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "76c67114-45bc-405d-a762-9055b80b3466",
+      "type": "http",
+      "documentation": "Reset password",
+      "method": "post",
+      "endpoint": "reset-password",
+      "responses": [
+        {
+          "uuid": "6a82fe17-3b20-4a0d-9b86-af95c5c4df31",
+          "body": "{\n  \"message\": \"Email recovery sent successfully\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "body",
+              "modifier": "",
+              "value": "",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "66c0f5b2-f126-46a4-91df-08a0ade6762c"
+    },
+    {
+      "type": "route",
+      "uuid": "999fb362-6a50-4f9a-869e-af5f11ffd431"
+    },
+    {
+      "type": "route",
+      "uuid": "56c89687-1e26-48dc-8f37-6d093c369071"
+    },
+    {
+      "type": "route",
+      "uuid": "76c67114-45bc-405d-a762-9055b80b3466"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "hostname": "",
+  "callbacks": []
+}

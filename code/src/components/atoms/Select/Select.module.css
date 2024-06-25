@@ -1,0 +1,27 @@
+.Label {
+  margin-bottom: var(--mantine-spacing-sm);
+  font-size: var(--mantine-font-size-sm);
+  font-weight: 600;
+  line-height: var(--mantine-line-height-sm);
+}
+
+.Select {
+  border-radius: var(--mantine-radius-md);
+}
+
+:root[data-mantine-color-scheme='dark'] {
+  .Select {
+    border-color: var(--mantine-color-gray-0);
+    background-color: var(--mantine-color-secondary-7);
+    color: var(--mantine-color-gray-0);
+  }
+
+  .Label {
+    color: var(--mantine-color-primary-1);
+  }
+
+  .Dropdown {
+    background-color: var(--mantine-color-secondary-7);
+    color: var(--mantine-color-gray-0);
+  }
+}

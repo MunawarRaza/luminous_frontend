@@ -1,0 +1,48 @@
+{
+    "containerDefinitions": [
+        {
+            "name": "production_fe_codexa_ecs_container",
+            "cpu": 0,
+            "portMappings": [
+                {
+                    "containerPort": 9000,
+                    "hostPort": 9000,
+                    "protocol": "tcp",
+                    "appProtocol": "http"
+                }
+            ],
+            "essential": true,
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-create-group": "true",
+                    "awslogs-group": "production/ecs_fe_codexa",
+                    "awslogs-region": "us-east-1",
+                    "awslogs-stream-prefix": "ecs"
+                }
+            },
+            "environment": [],
+            "mountPoints": [],
+            "volumesFrom": []
+        }
+    ],
+    "family": "production_fe_codexa_ecs_task",
+    "taskRoleArn": "arn:aws:iam::356849796881:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::356849796881:role/ecsTaskExecutionRole",
+    "networkMode": "awsvpc",
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "2048",
+    "memory": "4096",
+    "tags": [
+        {
+            "key": "Environment",
+            "value": "production"
+        },
+        {
+            "key": "ManagedBy",
+            "value": "terraform"
+        }
+    ]
+}

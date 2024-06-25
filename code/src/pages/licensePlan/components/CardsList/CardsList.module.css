@@ -1,0 +1,8 @@
+.CardsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 12px;
+  padding-left: var(--mantine-spacing-md);
+}

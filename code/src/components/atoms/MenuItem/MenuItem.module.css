@@ -1,0 +1,42 @@
+.MenuItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: var(--mantine-spacing-lg);
+  transition: all 100ms ease-in-out;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--mantine-color-text);
+  white-space: nowrap;
+
+  &:hover:not(.ActiveItem) {
+    color: var(--mantine-color-primary-4);
+  }
+}
+
+.ActiveItem {
+  color: #fff;
+  background-color: var(--mantine-color-primary-4);
+}
+
+.Icon {
+  display: grid;
+  place-content: center;
+
+  svg {
+    width: rem(20px);
+    height: rem(20px);
+  }
+}
+
+.ActiveItem {
+  .Icon svg {
+    color: #fff;
+  }
+}
+
+:root[data-mantine-color-scheme='dark'] {
+  .MenuItem {
+    color: #fff;
+  }
+}

@@ -1,0 +1,21 @@
+.Wrapper {
+  width: 100%;
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+.Container {
+  text-align: center;
+}
+
+.ActionWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: rem(700px);
+  margin: var(--mantine-spacing-2xl) auto 0;
+  gap: 20px;
+}

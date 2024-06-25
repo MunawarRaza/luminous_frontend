@@ -1,0 +1,33 @@
+.MainApp {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    'header header'
+    'sidebar main-content';
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.MainContent {
+  grid-area: main-content;
+  overflow: auto;
+  padding: var(--mantine-spacing-lg);
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 500ms ease-in-out;
+  position: relative;
+  z-index: 2;
+}
+
+.MainWrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  max-width: rem(1440px);
+  margin: 0 auto;
+  padding-bottom: var(--mantine-spacing-lg);
+}

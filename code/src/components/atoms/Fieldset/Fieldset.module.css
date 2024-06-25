@@ -1,0 +1,24 @@
+.Fieldset {
+  border-radius: var(--mantine-radius-lg);
+  border-color: var(--mantine-color-secondary-7);
+  border-width: 2px;
+  padding-left: 0;
+  background-color: transparent;
+}
+
+.Legend {
+  padding: 0 var(--mantine-spacing-sm) var(--mantine-spacing-xs) var(--mantine-spacing-xs);
+  font-size: var(--mantine-font-size-md);
+  font-weight: 600;
+  color: var(--mantine-color-secondary-7);
+}
+
+:root[data-mantine-color-scheme='dark'] {
+  .Fieldset {
+    border-color: var(--mantine-color-primary-1);
+  }
+
+  .Legend {
+    color: var(--mantine-color-primary-1);
+  }
+}

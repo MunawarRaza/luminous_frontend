@@ -1,0 +1,28 @@
+name: pull_request
+on: [pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: 'npm'
+          cache-dependency-path: code/package-lock.json
+
+      - name: Install dependencies
+        run: cd code && npm install
+
+      - name: Linting
+        run: cd code && npm run lint .
+
+      - name: Testing
+        run: cd code && npm run coverage
+
+      - name: Build
+        run: cd code && npm run build

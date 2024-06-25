@@ -1,0 +1,55 @@
+.Step {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.StepBody {
+  margin: 0;
+}
+
+.StepLabel {
+  color: var(--mantine-color-secondary-7);
+  font-weight: 600;
+}
+
+.StepIcon:not([data-completed='true']) {
+  content-visibility: hidden;
+  border: 4px solid var(--mantine-color-secondary-7);
+  background-color: transparent;
+}
+
+.StepIcon[data-progress='true'] {
+  background-color: var(--mantine-color-secondary-1);
+}
+
+:root[data-mantine-color-scheme='dark'] {
+  .StepLabel {
+    color: var(--mantine-color-gray-0);
+  }
+
+  .StepIcon {
+    overflow: hidden;
+  }
+
+  .StepIcon:not([data-completed='true']) {
+    border-color: var(--mantine-color-secondary-1);
+  }
+
+  .StepIcon[data-progress='true'] {
+    background-color: var(--mantine-color-secondary-3);
+  }
+
+  .Separator {
+    background-color: var(--mantine-color-gray-0);
+
+    &[data-active='true'] {
+      background-color: var(--mantine-color-secondary-3);
+    }
+  }
+
+  .CompletedIcon {
+    background-color: var(--mantine-color-secondary-3);
+  }
+}

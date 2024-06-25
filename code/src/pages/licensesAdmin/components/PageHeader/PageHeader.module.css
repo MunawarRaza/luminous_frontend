@@ -1,0 +1,28 @@
+.PageHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--mantine-spacing-lg);
+}
+
+.ActionCard {
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  max-width: 18rem;
+
+  .ActionTitle {
+    font-weight: 700;
+    margin-bottom: var(--mantine-spacing-md);
+  }
+
+  .ActionDescrption {
+    color: var(--mantine-color-secondary-5);
+  }
+
+  .Icon {
+    width: rem(64px);
+    height: rem(64px);
+    color: var(--mantine-color-text);
+  }
+}

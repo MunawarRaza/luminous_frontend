@@ -1,0 +1,29 @@
+version: "3.8"
+services:
+  webapp:
+    build:
+      context: ./code
+      dockerfile: Dockerfile
+      target: app
+    stdin_open: true
+    command: npm run dev-exposed
+    ports:
+      - "3000:3000"
+    environment:
+      - VITE_API_URL=http://localhost:8080
+      - CHOKIDAR_USEPOLLING=value
+    volumes:
+      - "./code/:/usr/src/app"
+      - "/usr/src/app/node_modules/"
+  storybook:
+    build:
+      context: ./code
+      dockerfile: Dockerfile
+      target: storybook
+    stdin_open: true
+    command: npm run storybook
+    ports:
+      - "8086:8086"
+    volumes:
+      - "./code/:/usr/src/storybook"
+      - "/usr/src/storybook/node_modules/"

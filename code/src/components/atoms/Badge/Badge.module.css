@@ -1,0 +1,10 @@
+.Badge {
+  padding: rem(14px) var(--mantine-spacing-md);
+  border-radius: rem(6px);
+  border-width: 2px;
+}
+
+.Text {
+  text-transform: capitalize;
+  font-weight: 600;
+}

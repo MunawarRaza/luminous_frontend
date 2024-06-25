@@ -1,0 +1,76 @@
+.OptionWrapper {
+  background-color: var(--mantine-color-secondary-5);
+  padding: var(--mantine-spacing-md) var(--mantine-spacing-3xl);
+  margin-left: var(--mantine-spacing-sm);
+  position: relative;
+
+  p,
+  legend,
+  label {
+    color: #fff !important;
+  }
+}
+
+.OptionCheckbox {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+}
+
+.OptionWrapperDisabled {
+  background-color: var(--mantine-color-gray-1);
+
+  p,
+  legend,
+  label {
+    color: var(--mantine-color-gray-4) !important;
+  }
+}
+
+.ActionWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+  margin-top: var(--mantine-spacing-lg);
+}
+
+.Wrapper {
+  overflow-y: hidden;
+}
+
+.PaymentsWrapper {
+  overflow-y: auto;
+  max-height: rem(470px);
+  /* Para Firefox */
+  scrollbar-width: none;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.PriceDescription {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+
+  > div {
+    flex: 1;
+  }
+}
+
+.Price {
+  font-size: var(--mantine-font-size-5xl);
+  font-weight: 700;
+
+  span {
+    font-size: var(--mantine-font-size-xl);
+
+    &:first-child {
+      position: relative;
+      bottom: 12px;
+    }
+  }
+}

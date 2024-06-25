@@ -1,0 +1,102 @@
+.FeaturesWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+}
+
+.FeatureItem {
+  border-radius: var(--mantine-radius-sm);
+  padding: var(--mantine-spacing-sm);
+  background-color: var(--mantine-color-secondary-1);
+}
+
+.FeatureHeader {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  p {
+    font-weight: 700;
+  }
+
+  svg {
+    width: rem(21px);
+    height: rem(21px);
+    stroke-width: 2px;
+  }
+}
+
+.Content {
+  position: relative;
+  padding-left: var(--mantine-spacing-md);
+  padding-top: var(--mantine-spacing-md);
+}
+
+.Badge {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.CouponWrapper {
+  display: flex;
+  align-items: flex-end;
+  flex: 0.7;
+
+  button {
+    position: relative;
+    right: 5px;
+  }
+}
+
+.CouponInput {
+  flex: 1;
+
+  input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.PriceWrapper {
+  flex: 0.3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.SummaryWrapper {
+  margin-top: var(--mantine-spacing-xl);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Price {
+  font-size: var(--mantine-font-size-5xl);
+  font-weight: 700;
+
+  span {
+    font-size: var(--mantine-font-size-xl);
+
+    &:first-child {
+      position: relative;
+      bottom: 12px;
+    }
+  }
+}
+
+.ActionWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+  margin-top: var(--mantine-spacing-lg);
+}

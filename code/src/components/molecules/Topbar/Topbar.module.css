@@ -1,0 +1,28 @@
+.Topbar {
+  min-height: rem(50px);
+  width: 100%;
+  border-bottom: 1px solid var(--mantine-color-secondary-5);
+  box-shadow: var(--mantine-shadow-sm);
+  padding: var(--mantine-spacing-md) var(--mantine-spacing-xl);
+  grid-area: header;
+}
+
+.Innertopbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ActionWrapper {
+  display: flex;
+  align-items: center;
+  gap: rem(8px);
+}
+
+:root[data-mantine-color-scheme='dark'] {
+  .Topbar {
+    background: linear-gradient(270deg, #00638e 0%, #005a66 100%);
+    border-bottom-color: var(--mantine-color-secondary-2);
+    box-shadow: none;
+  }
+}

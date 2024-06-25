@@ -1,0 +1,5 @@
+.LeftIcon {
+  width: rem(18px);
+  height: rem(18px);
+  color: var(--mantine-color-text);
+}

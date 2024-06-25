@@ -1,0 +1,21 @@
+.Checkbox {
+  border-radius: 50%;
+  width: 100%;
+  height: 90%;
+  margin: 2px 1px;
+}
+
+.Root:not([data-checked='true']) input {
+  background-color: transparent;
+  border: none;
+}
+
+.Inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--mantine-color-primary-7);
+  border-radius: 50%;
+  width: rem(22px);
+  height: rem(22px);
+}

@@ -1,0 +1,64 @@
+.RegularInput {
+  border: var(--mantine-border-hairline) solid var(--mantine-color-gray-3);
+  border-radius: var(--mantine-radius-md);
+  line-height: var(--mantine-line-height-sm);
+  padding-top: 6px;
+  padding-bottom: 6px;
+
+  &:hover:not(.errorInput):not(:disabled) {
+    border-color: var(--mantine-color-gray-8);
+  }
+
+  &:focus {
+    outline: var(--mantine-border-thin) solid var(--mantine-color-gray-8);
+  }
+
+  &:disabled {
+    background: var(--mantine-color-gray-1);
+    color: var(--mantine-color-gray-5);
+    border: var(--mantine-border-hairline) solid var(--mantine-color-gray-3);
+  }
+}
+
+.ErrorInput {
+  border-color: var(--mantine-color-red-4);
+
+  &:focus {
+    outline: var(--mantine-border-thick) solid var(--mantine-color-red-1);
+  }
+}
+
+.Label {
+  margin-bottom: var(--mantine-spacing-sm);
+  font-size: var(--mantine-font-size-sm);
+  font-weight: 600;
+  line-height: var(--mantine-line-height-sm);
+}
+
+.Error {
+  margin-top: var(--mantine-spacing-xs);
+  color: var(--mantine-color-red-4);
+}
+
+.Wrapper {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.InputWrapper {
+  flex: 1;
+}
+
+.CardImage {
+  width: rem(50px);
+  height: rem(40px);
+  z-index: 10;
+}
+
+.InputIcon {
+  width: rem(20px);
+  height: rem(20px);
+  color: var(--mantine-color-text);
+}

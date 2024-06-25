@@ -1,0 +1,33 @@
+.ActionGroup {
+  display: flex;
+  gap: 14px;
+  flex: 0.5;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+.ActionButton {
+  max-width: rem(300px);
+}
+
+.UpdateGroup {
+  display: flex;
+  gap: 14px;
+  flex: 1;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+.UpdateButton {
+  width: rem(300px);
+}
+
+.DetailsForm {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  min-width: rem(600px);
+}

@@ -1,0 +1,14 @@
+.Card {
+  border: var(--mantine-border-hairline) solid transparent;
+  width: 100%;
+}
+
+.Card-light {
+  border-color: var(--mantine-color-primary-5);
+}
+
+.Card-dark {
+  border-color: transparent;
+  background-color: var(--mantine-color-secondary-7);
+  color: #fff;
+}

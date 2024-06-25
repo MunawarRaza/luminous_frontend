@@ -1,0 +1,19 @@
+.Wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: var(--mantine-spacing-lg);
+}
+
+.SearchWrapper {
+  flex: 0.5;
+}
+
+.FiltersWrapper {
+  flex: 0.4;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 10px;
+}

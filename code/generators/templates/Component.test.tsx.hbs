@@ -1,0 +1,13 @@
+import { screen } from '@testing-library/react'
+import { composeStories } from '@storybook/react'
+import * as {{pascalCase name}}Stories from './{{pascalCase name}}.stories'
+import { render } from '@test/utils'
+
+const { Default } = composeStories({{pascalCase name}}Stories)
+
+describe('{{pascalCase name}} Component', () => {
+  it('should render component', () => {
+    render(<Default />)
+    expect(screen.getByText(/{{pascalCase name}}/i)).toBeInTheDocument()
+  })
+})

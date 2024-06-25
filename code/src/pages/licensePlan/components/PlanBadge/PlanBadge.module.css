@@ -1,0 +1,27 @@
+.Badge {
+  padding: 6px var(--mantine-spacing-lg);
+  border-radius: var(--mantine-radius-xl);
+  border: 2px solid var(--mantine-color-secondary-7);
+  font-weight: 600;
+  font-size: var(--mantine-font-size-md);
+  text-transform: uppercase;
+  z-index: 10;
+  background-color: white;
+  width: fit-content;
+  text-align: center;
+}
+
+.Badge-silver {
+  background: linear-gradient(93.71deg, #f5f3f4 1.7%, #8d8a90 30.22%, #f5f3f4 71.17%, #8d8a90 101.24%);
+}
+
+.Badge-gold {
+  background: linear-gradient(93.71deg, #faf2bf 1.7%, #c49530 30.22%, #faf2be 71.17%, #cda140 101.24%);
+}
+
+.Badge-unlimited {
+  background: linear-gradient(180deg, var(--mantine-color-secondary-5) 0%, var(--mantine-color-primary-2) 77.08%),
+    linear-gradient(0deg, var(--mantine-color-primary-5), var(--mantine-color-primary-5));
+
+  color: #fff;
+}

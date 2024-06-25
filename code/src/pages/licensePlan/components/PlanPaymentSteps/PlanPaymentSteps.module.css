@@ -1,0 +1,10 @@
+.Wrapper {
+  width: 100%;
+  min-width: rem(864px);
+  padding: var(--mantine-spacing-lg);
+}
+
+.FormWrapper {
+  width: 100%;
+  margin-top: var(--mantine-spacing-xl);
+}

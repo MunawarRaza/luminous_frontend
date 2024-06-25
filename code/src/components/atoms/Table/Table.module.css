@@ -1,0 +1,76 @@
+.TableWrapper {
+  display: flex;
+  align-items: flex-end;
+  gap: 32px;
+  flex-direction: column;
+}
+
+.Table {
+  color: var(--mantine-color-text);
+  box-shadow: var(--mantine-shadow-md);
+  border-spacing: 0;
+  border-collapse: separate;
+}
+
+.TableHead {
+  background-color: var(--mantine-color-secondary-8);
+}
+
+.TableTh {
+  color: #fff;
+  font-weight: 700;
+}
+
+.TableTh,
+.TableTd {
+  border-left: 1px solid var(--mantine-color-secondary-6);
+  border-top: 1px solid var(--mantine-color-secondary-6);
+}
+
+.TableTr:last-of-type .TableTd {
+  border-bottom: 1px solid var(--mantine-color-secondary-6);
+}
+
+.TableTr .TableTd:last-child {
+  border-right: 1px solid var(--mantine-color-secondary-6);
+}
+
+.TableTr .TableTh:first-child {
+  border-top-left-radius: var(--mantine-radius-md);
+}
+
+.TableTr .TableTh:last-child {
+  border-top-right-radius: var(--mantine-radius-md);
+}
+
+.TableTr:last-child .TableTd:first-child {
+  border-bottom-left-radius: var(--mantine-radius-md);
+}
+
+.TableTr:last-child .TableTd:last-child {
+  border-bottom-right-radius: var(--mantine-radius-md);
+}
+
+.Control {
+  border-color: var(--mantine-color-gray-2);
+}
+
+:root[data-mantine-color-scheme='dark'] {
+  .Table {
+    color: var(--mantine-color-primary-1);
+  }
+
+  .TableHead {
+    background-color: var(--mantine-color-primary-1);
+  }
+
+  .TableTh {
+    color: var(--mantine-color-primary-7);
+  }
+
+  .TableTd,
+  .TableTr:last-of-type .TableTd,
+  .TableTr .TableTd:last-child {
+    border-color: var(--mantine-color-primary-1);
+  }
+}

@@ -1,0 +1,28 @@
+.ManageTableActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: var(--mantine-spacing-lg);
+}
+
+.FiltersWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.FilterButton {
+  padding: rem(4px);
+  border-color: var(--mantine-color-text);
+
+  svg {
+    color: var(--mantine-color-text);
+  }
+}
+
+.FilterSelect {
+  max-width: rem(100px);
+}

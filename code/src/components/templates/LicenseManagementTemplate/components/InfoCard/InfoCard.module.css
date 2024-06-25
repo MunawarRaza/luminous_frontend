@@ -1,0 +1,19 @@
+.InfoCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  .Number {
+    font-size: var(--mantine-font-size-3xl);
+  }
+
+  &:nth-child(odd) .Number {
+    color: var(--mantine-color-primary-5);
+  }
+
+  &:nth-child(even) .Number {
+    color: var(--mantine-color-red-7);
+  }
+}

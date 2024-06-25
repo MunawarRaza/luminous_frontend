@@ -1,0 +1,61 @@
+.textareaInput {
+  border: var(--mantine-border-hairline) solid var(--mantine-color-gray-3);
+  border-radius: var(--mantine-radius-md);
+  line-height: var(--mantine-line-height-sm);
+  padding: 10px 14px;
+}
+
+.textareaInput:hover:not(.errorTextarea) {
+  border-color: var(--mantine-color-gray-8);
+}
+
+.textareaInput:focus {
+  outline: var(--mantine-border-thin) solid var(--mantine-color-gray-8);
+}
+
+.errorTextarea {
+  border-color: var(--mantine-color-red-4);
+}
+
+.errorTextarea:focus {
+  outline: var(--mantine-border-thick) solid var(--mantine-color-red-1);
+}
+
+.sectionIcon {
+  align-items: flex-start;
+  padding-top: var(--mantine-spacing-xs);
+}
+
+.label {
+  margin-bottom: var(--mantine-spacing-sm);
+  font-size: var(--mantine-font-size-sm);
+  font-weight: 600;
+  line-height: var(--mantine-line-height-sm);
+}
+
+.error {
+  margin-top: var(--mantine-spacing-xs);
+  color: var(--mantine-color-red-5);
+}
+
+.questionIcon {
+  width: 22px;
+  height: 22px;
+  color: var(--mantine-color-gray-4);
+}
+
+:root[data-mantine-color-scheme='dark'] {
+  .textareaInput {
+    border-color: var(--mantine-color-gray-0);
+    background-color: var(--mantine-color-secondary-7);
+    color: var(--mantine-color-gray-0);
+
+    ::placeholder {
+      color: var(--mantine-color-gray-3);
+    }
+  }
+
+  .label {
+    color: var(--mantine-color-primary-1);
+  }
+}

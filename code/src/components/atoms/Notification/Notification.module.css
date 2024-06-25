@@ -1,0 +1,71 @@
+.notification {
+  border-radius: var(--mantine-radius-xl);
+  border: 1px solid transparent;
+  border-top-width: 3px;
+  border-bottom-width: 3px;
+  padding: var(--mantine-spacing-md);
+  background-color: var(--mantine-color-primary-7);
+  min-width: rem(250px);
+
+  &::before {
+    display: none;
+  }
+}
+
+.wrapper {
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  z-index: 99;
+}
+
+.description {
+  color: #fff;
+  font-weight: 600;
+  font-size: var(--mantine-font-size-md);
+}
+
+.title {
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #fff;
+  margin-bottom: var(--mantine-spacing-xs);
+  font-size: var(--mantine-font-size-md);
+}
+
+.icon {
+  background-color: transparent;
+}
+
+.title-success {
+  color: var(--mantine-color-green-1);
+}
+
+.title-error {
+  color: var(--mantine-color-error-1);
+}
+
+.notification-success {
+  background: var(--mantine-color-green-7);
+  border-color: var(--mantine-color-green-3);
+}
+
+.notification-error {
+  background: var(--mantine-color-error-7);
+  border-color: var(--mantine-color-error-3);
+}
+
+.closeButton {
+  color: #fff;
+
+  svg {
+    width: rem(20px) !important;
+    height: rem(20px) !important;
+  }
+
+  &:hover {
+    background-color: transparent;
+  }
+}
